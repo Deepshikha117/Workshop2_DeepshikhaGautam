@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepshikha's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header id="hero">
+    <video id="video-background" autoplay muted loop playsinline>
+      <source src="videos/Backg.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="overlay"></div>
+
+    <nav>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+        ☰
+      </button>
+
+      <div class="logo">PORTFOLIO</div>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Deepshikha Gautam</h1>
+      <p>Learning | Creating | Innovating</p>
+      <a href="#projects" class="cta-button">View My Work</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="container">
+        <div class="about-content">
+          <article class="about-text">
+            <h3>Hello!</h3>
+            <p>I’m Deepshikha Gautam. I’m passionate about learning new technologies and exploring creative innovations.</p>
+            <p>I love designing and developing websites, building interactive environments in Unity, and expressing ideas through filmmaking and scriptwriting. Over time, I’ve worked on multiple projects across these fields, which has helped me grow my skills and understand how creativity and technology can come together to make meaningful work.</p>
+          </article>
+          <figure class="about-image">
+            <img src="images/AC108468.JPG" alt="Deepshikha Gautam">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="container">
+        <div class="skills-grid">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Unity 3D</span>
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">UI/UX Design</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="container">
+        <div class="project-gallery">
+          <article class="project-card">
+            <img src="images/horror.png" alt="Unity Game/3D">
+            <div class="card-text">
+              <h3>Unity Game / 3D</h3>
+              <p>Immersive 3D environments and interactive gameplay mechanics.</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="images/todo.png" alt="Web Development">
+            <div class="card-text">
+              <h3>Web Development</h3>
+              <p>Responsive websites and modern web applications built with clean code.</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="images/java.png" alt="Java Projects">
+            <div class="card-text">
+              <h3>Java Projects</h3>
+              <p>Object-oriented programming solutions and logic-based applications.</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="images/DeepshikhaGuatam_sololearn.jpg" alt="UI/UX Design">
+            <div class="card-text">
+              <h3>UI/UX Design</h3>
+              <p>User-centric interface design focusing on accessibility and aesthetics.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Get In Touch</h2>
+      <div class="container">
+        <form id="contact-form" action="#" method="POST">
+          <p>Have a project in mind? Send me a message!</p>
+          
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can I help you?"></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+          <div id="form-message"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Deepshikha Gautam. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
